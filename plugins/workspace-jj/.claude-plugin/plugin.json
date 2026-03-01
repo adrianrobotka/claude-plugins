@@ -1,0 +1,8 @@
+{
+  "name": "workspace-jj",
+  "description": "Enables Claude Code worktree isolation for jj (Jujutsu) repositories using jj workspaces",
+  "author": {
+    "name": "muloka",
+    "email": "muloka@users.noreply.github.com"
+  }
+}
