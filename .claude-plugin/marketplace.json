@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "muloka-claude-plugins",
-  "description": "jj (Jujutsu) plugins for Claude Code — commit workflows, code review, PR review, and feature development",
+  "description": "jj (Jujutsu) plugins for Claude Code — commit workflows, code review, PR review, feature development, and workspace isolation",
   "owner": {
     "name": "muloka",
     "email": "muloka@users.noreply.github.com"
@@ -50,6 +50,17 @@
       "source": "./plugins/feature-dev-jj",
       "category": "productivity",
       "homepage": "https://github.com/muloka/claude-plugins/tree/main/plugins/feature-dev-jj"
+    },
+    {
+      "name": "workspace-jj",
+      "description": "Enables Claude Code worktree isolation for jj (Jujutsu) repositories using jj workspaces",
+      "author": {
+        "name": "muloka",
+        "email": "muloka@users.noreply.github.com"
+      },
+      "source": "./plugins/workspace-jj",
+      "category": "productivity",
+      "homepage": "https://github.com/muloka/claude-plugins/tree/main/plugins/workspace-jj"
     }
   ]
 }
