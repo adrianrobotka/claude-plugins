@@ -1,0 +1,21 @@
+{
+  "name": "feature-dev-jj",
+  "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review (jj/Jujutsu edition)",
+  "author": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/block-raw-git.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
