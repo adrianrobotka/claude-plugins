@@ -16,7 +16,7 @@ Workspaces share the same repository store (lightweight, fast to create) but eac
 ## Installation
 
 ```bash
-claude plugins add muloka/claude-plugins:workspace-jj
+claude plugins add adrianrobotka/claude-plugins:workspace-jj
 ```
 
 ## Setup
@@ -93,7 +93,7 @@ See [design spec](../../docs/specs/2026-03-18-permission-gateway-and-fan-flames-
 
 ## Author
 
-[muloka](https://github.com/muloka)
+[adrianrobotka](https://github.com/adrianrobotka)
 
 ## Version
 

@@ -12,7 +12,7 @@ Install the jj-aware statusline script and configure it in this project's `.clau
 ### Step 1: Detect context
 
 1. Verify this is a jj repo by running `jj root`. If it fails, tell the user this command requires a jj repository and stop.
-2. Find the plugin's scripts directory. Look for the directory containing this command file — it will be something like `~/.claude/plugins/cache/muloka-claude-plugins/project-setup-jj/<hash>/`. The scripts are in `scripts/` relative to the plugin root.
+2. Find the plugin's scripts directory. Look for the directory containing this command file — it will be something like `~/.claude/plugins/cache/adrianrobotka-claude-plugins/project-setup-jj/<hash>/`. The scripts are in `scripts/` relative to the plugin root.
 3. Determine the project root using `jj root`.
 4. Ensure `.claude/scripts/` exists in the project root:
    ```bash

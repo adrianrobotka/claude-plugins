@@ -24,7 +24,7 @@ Bootstrap jj workflow enforcement for any project with a single command. Sets up
 
 ```bash
 # 1. Install from plugin manager
-/plugin install project-setup-jj@muloka-claude-plugins
+/plugin install project-setup-jj@adrianrobotka-claude-plugins
 
 # 2. Run setup in your jj project
 /project-setup
@@ -42,7 +42,7 @@ Enables Claude Code's `--worktree` flag and subagent `isolation: "worktree"` in 
 
 ```bash
 # 1. Install from plugin manager
-/plugin install workspace-jj@muloka-claude-plugins
+/plugin install workspace-jj@adrianrobotka-claude-plugins
 
 # 2. Run setup in your jj project (copies hook scripts, configures settings)
 /workspace-setup
@@ -111,8 +111,8 @@ PROMPT BLOCK    per rule    PROMPT    SILENT     LLM+PROMPT
 Add the marketplace and install plugins via the plugin manager:
 
 ```
-/plugin marketplace add muloka/claude-plugins
-/plugin install peer-review-jj@muloka-claude-plugins
+/plugin marketplace add adrianrobotka/claude-plugins
+/plugin install peer-review-jj@adrianrobotka-claude-plugins
 ```
 
 Or browse available plugins:

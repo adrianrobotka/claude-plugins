@@ -1,55 +1,39 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "muloka-claude-plugins",
+  "name": "adrianrobotka-claude-plugins",
   "description": "jj (Jujutsu) plugins for Claude Code — project setup, commit workflows, peer review, and workspace isolation",
   "owner": {
-    "name": "muloka",
-    "email": "muloka@users.noreply.github.com"
+    "name": "adrianrobotka",
+    "email": "adrianrobotka@users.noreply.github.com"
   },
   "plugins": [
     {
       "name": "project-setup-jj",
       "description": "Bootstrap jj (Jujutsu) workflow enforcement for any Claude Code project with a single /project-setup command",
-      "author": {
-        "name": "muloka",
-        "email": "muloka@users.noreply.github.com"
-      },
       "source": "./plugins/project-setup-jj",
       "category": "productivity",
-      "homepage": "https://github.com/muloka/claude-plugins/tree/main/plugins/project-setup-jj"
+      "homepage": "https://github.com/adrianrobotka/claude-plugins/tree/main/plugins/project-setup-jj"
     },
     {
       "name": "commit-commands-jj",
       "description": "Commands for jj (Jujutsu) commit workflows including commit, push, and PR creation",
-      "author": {
-        "name": "muloka",
-        "email": "muloka@users.noreply.github.com"
-      },
       "source": "./plugins/commit-commands-jj",
       "category": "productivity",
-      "homepage": "https://github.com/muloka/claude-plugins/tree/main/plugins/commit-commands-jj"
+      "homepage": "https://github.com/adrianrobotka/claude-plugins/tree/main/plugins/commit-commands-jj"
     },
     {
       "name": "peer-review-jj",
       "description": "Unified change review for jj repos — generalist-first with emergent specialists, two-phase pipeline, structured findings",
-      "author": {
-        "name": "muloka",
-        "email": "muloka@users.noreply.github.com"
-      },
       "source": "./plugins/peer-review-jj",
       "category": "productivity",
-      "homepage": "https://github.com/muloka/claude-plugins/tree/main/plugins/peer-review-jj"
+      "homepage": "https://github.com/adrianrobotka/claude-plugins/tree/main/plugins/peer-review-jj"
     },
     {
       "name": "workspace-jj",
       "description": "Enables Claude Code worktree isolation for jj (Jujutsu) repositories using jj workspaces",
-      "author": {
-        "name": "muloka",
-        "email": "muloka@users.noreply.github.com"
-      },
       "source": "./plugins/workspace-jj",
       "category": "productivity",
-      "homepage": "https://github.com/muloka/claude-plugins/tree/main/plugins/workspace-jj"
+      "homepage": "https://github.com/adrianrobotka/claude-plugins/tree/main/plugins/workspace-jj"
     }
   ]
 }

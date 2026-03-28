@@ -1,10 +1,6 @@
 {
   "name": "commit-commands-jj",
   "description": "Streamline your jj (Jujutsu) workflow with simple commands for committing, pushing, and creating pull requests",
-  "author": {
-    "name": "muloka",
-    "email": "muloka@users.noreply.github.com"
-  },
   "hooks": {
     "PreToolUse": [
       {

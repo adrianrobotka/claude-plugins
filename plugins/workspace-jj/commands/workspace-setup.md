@@ -11,7 +11,7 @@ Configure the `WorktreeCreate` and `WorktreeRemove` hooks in the current project
 
 ## Steps
 
-1. **Find the plugin's installed scripts.** Look for the directory containing this command file — it will be something like `~/.claude/plugins/cache/muloka-claude-plugins/workspace-jj/<hash>/scripts/`. The scripts are:
+1. **Find the plugin's installed scripts.** Look for the directory containing this command file — it will be something like `~/.claude/plugins/cache/adrianrobotka-claude-plugins/workspace-jj/<hash>/scripts/`. The scripts are:
    - `jj-workspace-create.sh`
    - `jj-workspace-remove.sh`
 

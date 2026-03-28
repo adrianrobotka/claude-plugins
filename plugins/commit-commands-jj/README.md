@@ -542,7 +542,7 @@ claude plugins add ./plugins/commit-commands-jj
 
 ## Author
 
-[muloka](https://github.com/muloka)
+[adrianrobotka](https://github.com/adrianrobotka)
 
 ## Version
 

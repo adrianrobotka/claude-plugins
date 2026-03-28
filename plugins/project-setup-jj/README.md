@@ -14,7 +14,7 @@ When starting a new Claude Code project that uses jj, there's no automated way t
 ## Installation
 
 ```bash
-claude plugins add muloka/claude-plugins:project-setup-jj
+claude plugins add adrianrobotka/claude-plugins:project-setup-jj
 ```
 
 ## Usage
@@ -75,7 +75,7 @@ Running `/project-setup` multiple times is safe. It will:
 
 ## Author
 
-[muloka](https://github.com/muloka)
+[adrianrobotka](https://github.com/adrianrobotka)
 
 ## Version
 
