@@ -30,7 +30,7 @@ This creates/updates the following in your project:
 | File | Purpose |
 |------|---------|
 | `.claude/hooks/jj-session-start.sh` | SessionStart hook showing jj context |
-| `.claude/hooks/jj-jj-require-new.sh` | PreToolUse hook — prompts `jj new` before editing non-empty changes |
+| `.claude/hooks/jj-require-new.sh` | PreToolUse hook — prompts `jj new` before editing non-empty changes |
 | `.claude/settings.local.json` | Hook registration + jj permissions |
 | `CLAUDE.md` | jj VCS policy directive (created or updated) |
 
