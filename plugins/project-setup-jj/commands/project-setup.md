@@ -79,11 +79,11 @@ Replace `<project-root>` with the actual absolute path from `jj root`.
 
 ### Step 4: Copy require-jj-new hook script
 
-Copy `require-jj-new.sh` from the plugin's `scripts/` directory to the project's `.claude/scripts/`:
+Copy `jj-jj-require-new.sh` from the plugin's `scripts/` directory to the project's `.claude/scripts/`:
 
 ```bash
-cp <plugin-scripts-dir>/require-jj-new.sh "$(jj root)/.claude/scripts/"
-chmod +x "$(jj root)/.claude/scripts/require-jj-new.sh"
+cp <plugin-scripts-dir>/jj-jj-require-new.sh "$(jj root)/.claude/scripts/"
+chmod +x "$(jj root)/.claude/scripts/jj-jj-require-new.sh"
 ```
 
 Then merge a PreToolUse hook entry into `.claude/settings.local.json` (using the same deep-merge strategy as Step 3):
@@ -97,7 +97,7 @@ Then merge a PreToolUse hook entry into `.claude/settings.local.json` (using the
         "hooks": [
           {
             "type": "command",
-            "command": "<project-root>/.claude/scripts/require-jj-new.sh"
+            "command": "<project-root>/.claude/scripts/jj-jj-require-new.sh"
           }
         ]
       }
@@ -126,7 +126,7 @@ The CLAUDE.md file is at the project root (from `jj root`).
 Show a summary of what was set up:
 
 - SessionStart hook script copied to `.claude/scripts/jj-session-start.sh`
-- PreToolUse guard hook copied to `.claude/scripts/require-jj-new.sh`
+- PreToolUse guard hook copied to `.claude/scripts/jj-jj-require-new.sh`
 - Settings updated in `.claude/settings.local.json` (SessionStart hook + PreToolUse hook + permissions)
 - CLAUDE.md created/updated with jj workflow instructions (or "already up to date" if hash matches)
 

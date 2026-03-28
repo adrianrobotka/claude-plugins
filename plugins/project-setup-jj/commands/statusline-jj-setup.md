@@ -21,11 +21,11 @@ Install the jj-aware statusline script and configure it in this project's `.clau
 
 ### Step 2: Copy statusline script
 
-Copy `statusline-jj.sh` from the plugin's `scripts/` directory to the project's `.claude/scripts/`:
+Copy `jj-statusline.sh` from the plugin's `scripts/` directory to the project's `.claude/scripts/`:
 
 ```bash
-cp <plugin-scripts-dir>/statusline-jj.sh "$(jj root)/.claude/scripts/"
-chmod +x "$(jj root)/.claude/scripts/statusline-jj.sh"
+cp <plugin-scripts-dir>/jj-statusline.sh "$(jj root)/.claude/scripts/"
+chmod +x "$(jj root)/.claude/scripts/jj-statusline.sh"
 ```
 
 ### Step 3: Update `.claude/settings.local.json`
@@ -36,7 +36,7 @@ Read the current `.claude/settings.local.json` (may not exist). Deep-merge the f
 {
   "statusLine": {
     "type": "command",
-    "command": "<project-root>/.claude/scripts/statusline-jj.sh"
+    "command": "<project-root>/.claude/scripts/jj-statusline.sh"
   }
 }
 ```
@@ -48,7 +48,7 @@ Replace `<project-root>` with the actual absolute path from `jj root`.
 ### Step 4: Confirm to user
 
 Show:
-- Statusline script copied to `.claude/scripts/statusline-jj.sh`
+- Statusline script copied to `.claude/scripts/jj-statusline.sh`
 - `statusLine` config added to `.claude/settings.local.json`
 - **Restart Claude Code** for the statusline to appear
 

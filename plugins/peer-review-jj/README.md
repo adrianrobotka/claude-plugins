@@ -29,8 +29,8 @@ Generalists scale with change size (1 per ~300 lines). Specialists emerge from r
 - `skills/requesting-change-review.md` — phase 1: dispatch
 - `skills/receiving-change-review.md` — phase 2: aggregation
 - `agents/change-reviewer.md` — generalist reviewer agent
-- `scripts/block-raw-git.sh` — hook: prevent raw git commands
-- `scripts/block-review-markers.sh` — hook: prevent review markers in commits
+- `scripts/jj-block-raw-git.sh` — hook: prevent raw git commands
+- `scripts/jj-block-review-markers.sh` — hook: prevent review markers in commits
 
 ## Replaces
 

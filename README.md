@@ -2,7 +2,7 @@
 
 Claude Code plugins for **jj (Jujutsu)** workflows — project setup, workspace isolation, commit management, peer review, and autonomous permission gating.
 
-The jj plugins (project-setup, workspace, commit-commands, peer-review) include a `PreToolUse` hook (`block-raw-git.sh`) that intercepts Bash tool calls and blocks raw `git` commands, keeping your workflow pure jj. When Claude reaches for `git add` or `git commit`, the hook catches it and suggests the jj equivalent. Permission-gateway is a standalone plugin that works in any repo (jj or git).
+The jj plugins (project-setup, workspace, commit-commands, peer-review) include a `PreToolUse` hook (`jj-block-raw-git.sh`) that intercepts Bash tool calls and blocks raw `git` commands, keeping your workflow pure jj. When Claude reaches for `git add` or `git commit`, the hook catches it and suggests the jj equivalent. Permission-gateway is a standalone plugin that works in any repo (jj or git).
 
 All jj output commands (`jj log`, `jj diff`, `jj bookmark list`, `jj op log`, `jj workspace list`, `jj show`, `jj evolog`, `jj op show`, `jj config list`, `jj tag list`) use JSON templates (`-T 'json(self)'`) by default, giving Claude Code structured, machine-parseable output instead of human-readable text. Requires jj >= 0.31.0.
 

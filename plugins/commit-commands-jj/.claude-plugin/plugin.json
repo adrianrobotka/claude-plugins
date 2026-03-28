@@ -8,7 +8,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/block-raw-git.sh"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/jj-block-raw-git.sh"
           }
         ]
       }
