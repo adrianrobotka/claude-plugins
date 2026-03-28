@@ -15,18 +15,18 @@ Configure the `WorktreeCreate` and `WorktreeRemove` hooks in the current project
    - `jj-workspace-create.sh`
    - `jj-workspace-remove.sh`
 
-2. **Copy the scripts to a stable project location.** Copy both scripts to `.claude/scripts/` in the project root. This avoids pointing hooks at the plugin cache (which changes on every plugin update).
+2. **Copy the scripts to a stable project location.** Copy both scripts to `.claude/hooks/` in the project root. This avoids pointing hooks at the plugin cache (which changes on every plugin update).
 
    ```bash
    mkdir -p .claude/scripts
-   cp <plugin-scripts-dir>/jj-workspace-create.sh .claude/scripts/
-   cp <plugin-scripts-dir>/jj-workspace-remove.sh .claude/scripts/
-   chmod +x .claude/scripts/jj-workspace-create.sh .claude/scripts/jj-workspace-remove.sh
+   cp <plugin-scripts-dir>/jj-workspace-create.sh .claude/hooks/
+   cp <plugin-scripts-dir>/jj-workspace-remove.sh .claude/hooks/
+   chmod +x .claude/hooks/jj-workspace-create.sh .claude/hooks/jj-workspace-remove.sh
    ```
 
 3. **Read the current settings** at `.claude/settings.local.json` (it may not exist yet, or may have existing content to preserve).
 
-4. **Merge the following hooks** into the settings JSON, preserving any existing keys. Use the **absolute path** to the project's `.claude/scripts/` directory:
+4. **Merge the following hooks** into the settings JSON, preserving any existing keys. Use the **absolute path** to the project's `.claude/hooks/` directory:
 
    ```json
    {
@@ -36,7 +36,7 @@ Configure the `WorktreeCreate` and `WorktreeRemove` hooks in the current project
            "hooks": [
              {
                "type": "command",
-               "command": "<project-root>/.claude/scripts/jj-workspace-create.sh"
+               "command": "<project-root>/.claude/hooks/jj-workspace-create.sh"
              }
            ]
          }
@@ -46,7 +46,7 @@ Configure the `WorktreeCreate` and `WorktreeRemove` hooks in the current project
            "hooks": [
              {
                "type": "command",
-               "command": "<project-root>/.claude/scripts/jj-workspace-remove.sh"
+               "command": "<project-root>/.claude/hooks/jj-workspace-remove.sh"
              }
            ]
          }
@@ -60,7 +60,7 @@ Configure the `WorktreeCreate` and `WorktreeRemove` hooks in the current project
 5. **Write the updated settings** to `.claude/settings.local.json`.
 
 6. **Confirm** by showing the user:
-   - The scripts copied to `.claude/scripts/`
+   - The scripts copied to `.claude/hooks/`
    - The hooks configured in `.claude/settings.local.json`
    - Remind them to restart their Claude Code session for the hooks to take effect
-   - Suggest adding `.claude/scripts/` to `.gitignore` if they don't want to track the scripts in version control
+   - Suggest adding `.claude/hooks/` to `.gitignore` if they don't want to track the scripts in version control

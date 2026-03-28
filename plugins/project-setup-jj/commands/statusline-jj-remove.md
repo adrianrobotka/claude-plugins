@@ -16,7 +16,7 @@ Remove the jj statusline script and configuration from this project.
 ### Step 2: Remove statusline script
 
 ```bash
-rm -f "$(jj root)/.claude/scripts/jj-statusline.sh"
+rm -f "$(jj root)/.claude/hooks/jj-statusline.sh"
 ```
 
 ### Step 3: Remove statusLine from settings

@@ -14,18 +14,18 @@ Install the jj-aware statusline script and configure it in this project's `.clau
 1. Verify this is a jj repo by running `jj root`. If it fails, tell the user this command requires a jj repository and stop.
 2. Find the plugin's scripts directory. Look for the directory containing this command file — it will be something like `~/.claude/plugins/cache/adrianrobotka-claude-plugins/project-setup-jj/<hash>/`. The scripts are in `scripts/` relative to the plugin root.
 3. Determine the project root using `jj root`.
-4. Ensure `.claude/scripts/` exists in the project root:
+4. Ensure `.claude/hooks/` exists in the project root:
    ```bash
    mkdir -p "$(jj root)/.claude/scripts"
    ```
 
 ### Step 2: Copy statusline script
 
-Copy `jj-statusline.sh` from the plugin's `scripts/` directory to the project's `.claude/scripts/`:
+Copy `jj-statusline.sh` from the plugin's `scripts/` directory to the project's `.claude/hooks/`:
 
 ```bash
-cp <plugin-scripts-dir>/jj-statusline.sh "$(jj root)/.claude/scripts/"
-chmod +x "$(jj root)/.claude/scripts/jj-statusline.sh"
+cp <plugin-scripts-dir>/jj-statusline.sh "$(jj root)/.claude/hooks/"
+chmod +x "$(jj root)/.claude/hooks/jj-statusline.sh"
 ```
 
 ### Step 3: Update `.claude/settings.local.json`
@@ -36,7 +36,7 @@ Read the current `.claude/settings.local.json` (may not exist). Deep-merge the f
 {
   "statusLine": {
     "type": "command",
-    "command": "<project-root>/.claude/scripts/jj-statusline.sh"
+    "command": "<project-root>/.claude/hooks/jj-statusline.sh"
   }
 }
 ```
@@ -48,7 +48,7 @@ Replace `<project-root>` with the actual absolute path from `jj root`.
 ### Step 4: Confirm to user
 
 Show:
-- Statusline script copied to `.claude/scripts/jj-statusline.sh`
+- Statusline script copied to `.claude/hooks/jj-statusline.sh`
 - `statusLine` config added to `.claude/settings.local.json`
 - **Restart Claude Code** for the statusline to appear
 

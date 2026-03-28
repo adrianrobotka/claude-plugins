@@ -51,7 +51,7 @@ Enables Claude Code's `--worktree` flag and subagent `isolation: "worktree"` in 
 claude --worktree feature-auth
 ```
 
-Claude Code doesn't pick up `WorktreeCreate`/`WorktreeRemove` hooks from plugins — they must be in project settings. The `/workspace-setup` command handles this by copying scripts to `.claude/scripts/` and configuring `.claude/settings.local.json`.
+Claude Code doesn't pick up `WorktreeCreate`/`WorktreeRemove` hooks from plugins — they must be in project settings. The `/workspace-setup` command handles this by copying scripts to `.claude/hooks/` and configuring `.claude/settings.local.json`.
 
 **Requires:** [jj](https://martinvonz.github.io/jj/) and [jq](https://jqlang.github.io/jq/)
 
