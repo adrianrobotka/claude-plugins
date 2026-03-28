@@ -36,7 +36,7 @@ Read the current `.claude/settings.local.json` (may not exist). Deep-merge the f
 {
   "statusLine": {
     "type": "command",
-    "command": "<project-root>/.claude/hooks/jj-statusline.sh"
+    "command": ".claude/hooks/jj-statusline.sh"
   }
 }
 ```

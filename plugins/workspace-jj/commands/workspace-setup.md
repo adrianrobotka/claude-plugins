@@ -36,7 +36,7 @@ Configure the `WorktreeCreate` and `WorktreeRemove` hooks in the current project
            "hooks": [
              {
                "type": "command",
-               "command": "<project-root>/.claude/hooks/jj-workspace-create.sh"
+               "command": ".claude/hooks/jj-workspace-create.sh"
              }
            ]
          }
@@ -46,7 +46,7 @@ Configure the `WorktreeCreate` and `WorktreeRemove` hooks in the current project
            "hooks": [
              {
                "type": "command",
-               "command": "<project-root>/.claude/hooks/jj-workspace-remove.sh"
+               "command": ".claude/hooks/jj-workspace-remove.sh"
              }
            ]
          }

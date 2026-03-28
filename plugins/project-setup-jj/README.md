@@ -8,7 +8,7 @@ When starting a new Claude Code project that uses jj, there's no automated way t
 
 - **SessionStart hook** — shows current jj change, status, and workflow reminder when a session starts
 - **PreToolUse guard hook** — prompts you to run `jj new` before editing into a non-empty change
-- **CLAUDE.md template** — slim jj VCS policy directive
+- **CLAUDE.local.md template** — slim jj VCS policy directive
 - **Permissions** — pre-allows jj commands and gh CLI, denies raw git
 
 ## Installation
@@ -61,7 +61,7 @@ Working copy status:
 Running `/project-setup` multiple times is safe. It will:
 - Overwrite scripts with the latest version
 - Merge settings without duplicating entries
-- Update the jj section in CLAUDE.md (via markers) without touching other content
+- Update the jj section in CLAUDE.local.md (via markers) without touching other content
 
 ## Related Plugins
 
