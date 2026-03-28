@@ -1,4 +1,4 @@
 {
   "name": "workspace-jj",
-  "description": "Enables Claude Code worktree isolation for jj (Jujutsu) repositories using jj workspaces",
+  "description": "Enables Claude Code worktree isolation for jj (Jujutsu) repositories using jj workspaces"
 }
