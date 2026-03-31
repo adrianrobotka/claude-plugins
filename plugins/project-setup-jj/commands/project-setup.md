@@ -18,12 +18,12 @@ Bootstrap jj (Jujutsu) workflow enforcement for the current project. This sets u
 3. Determine the project root using `jj root`.
 4. Ensure `.claude/` and `.claude/hooks/` directories exist in the project root:
    ```bash
-   mkdir -p "$(jj root)/.claude/scripts"
+   mkdir -p "$(jj root)/.claude/hooks"
    ```
 
 ### Step 2: Copy SessionStart hook script
 
-Copy `jj-session-start.sh` from the plugin's `scripts/` directory to the project's `.claude/hooks/`:
+Copy `jj-session-start.sh` from the plugin's `hooks/` directory to the project's `.claude/hooks/`:
 
 ```bash
 cp <plugin-scripts-dir>/jj-session-start.sh "$(jj root)/.claude/hooks/"
@@ -44,7 +44,7 @@ Read the current `.claude/settings.local.json` (may not exist). Deep-merge the f
         "hooks": [
           {
             "type": "command",
-            "command": ".claude/hooks/jj-session-start.sh",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/jj-session-start.sh",
             "async": false
           }
         ]
@@ -97,7 +97,7 @@ Then merge a PreToolUse hook entry into `.claude/settings.local.json` (using the
         "hooks": [
           {
             "type": "command",
-            "command": ".claude/hooks/jj-require-new.sh"
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/jj-require-new.sh"
           }
         ]
       }
